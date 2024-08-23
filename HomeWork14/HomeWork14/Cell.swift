@@ -16,13 +16,13 @@ final class Cell: UICollectionViewCell {
         return labelClub
     }()
     
-    private lazy var imageClub: UIImageView = {
+    private let imageClub: UIImageView = {
         let imageClub = UIImageView()
         imageClub.contentMode = .scaleAspectFit
         return imageClub
     }()
     
-    private lazy var stackClub: UIStackView = {
+    private let stackClub: UIStackView = {
         let stackClub = UIStackView()
         stackClub.axis = .vertical
         stackClub.distribution = .equalCentering
