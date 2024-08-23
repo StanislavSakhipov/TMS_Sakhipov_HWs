@@ -16,13 +16,13 @@ final class Cell: UICollectionViewCell {
         return labelClub
     }()
     
-    private let imageClub: UIImageView = {
+    private lazy var imageClub: UIImageView = {
         let imageClub = UIImageView()
         imageClub.contentMode = .scaleAspectFit
         return imageClub
     }()
     
-    private let stackClub: UIStackView = {
+    private lazy var stackClub: UIStackView = {
         let stackClub = UIStackView()
         stackClub.axis = .vertical
         stackClub.distribution = .equalCentering
@@ -34,6 +34,7 @@ final class Cell: UICollectionViewCell {
         addSubview(stackClub)
         stackClub.addArrangedSubview(imageClub)
         stackClub.addArrangedSubview(labelClub)
+        stackClub.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             stackClub.widthAnchor.constraint(equalToConstant: 170)
         ])
