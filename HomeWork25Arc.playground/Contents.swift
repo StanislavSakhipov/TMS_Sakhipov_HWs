@@ -34,8 +34,10 @@ class Apartment {
     }
 }
 
-var room10: Apartment? = Apartment(room: 10, 
-                                   rentPrice: 13500.5)
+var room10: Apartment? = Apartment(
+    room: 10, 
+    rentPrice: 13500.5
+)
 var rick: Person? = Person(name: "Rickardo", 
                            surname: "Santiago",
                            age: 25,
